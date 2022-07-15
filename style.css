@@ -1,5 +1,11 @@
 @charset "UTF-08";
 
+:root {
+  --font1: Verdana, Geneva, Helvetica;
+  --font2: "Passion One", cursive;
+  --font3: "Sriracha", cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +14,10 @@
 html,
 body {
   min-height: 100vh;
+
   background-color: darkgray;
+
+  font-family: var(--font1);
 }
 
 header {
@@ -21,6 +30,9 @@ header {
 header h1 {
   padding-top: 50px;
   font-variant: small-caps;
+
+  font-family: var(--font2);
+  font-size: 10vw;
 }
 
 header p {
@@ -44,6 +56,9 @@ section {
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 30px;
+
+  font-family: var(--font3);
+  font-size: 3.5vw;
 }
 
 .normal {
@@ -57,8 +72,9 @@ section {
 }
 
 .imagem p {
+  display: inline-block;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.26);
-  width: 400px;
 }
 
 footer {
